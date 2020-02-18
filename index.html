@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" />
+		<script src="mc_script.js"></script>
+  </head>
+  <body>
+		<header>
+    	<img src="mc_logo.png" alt="Millennium Computers" />
+		</header>
+		<form id="cForm" action="http://www.mill_computers.com/orders/process.cgi" method="post">
+		
+			<fieldset id="oForm">
+				<legend>Order Form</legend>
+
+				<p><em>* means required</em></p>
+
+				<div class="pSpeed">
+					<label for="pSpeed">Processor Speed*</label>
+					<select name="memory" id="memory" size="1">
+						<option value="3.2GHz">3.2GHz</option>
+						<option value="4.0GHz">4.0GHz</option>
+						<option value="5.2GHz">5.2GHz</option>
+					</select>
+				</div>
+
+				<div class="memory">
+					<label for="memory">Memory Size*</label>
+					<select name="memory" id="memory" size="1">
+						<option value="1GB">1GB</option>
+						<option value="2GB">2GB</option>
+						<option value="4GB">4GB</option>
+						<option value="8GB">8GB</option>
+					</select>
+				</div>
+
+				<div class="monitorSize">
+					<label for="monitorSize">Monitor Size*</label>
+					<select name="monitorSize" id="monitorSize" size="1">
+						<option value="15">15"</option>
+						<option value="17">17"</option>
+						<option value="19">19"</option>
+						<option value="21">21"</option>
+					</select>
+				</div>
+
+				<div class="hDrive">
+					<label for="hDrive">Hard Drive*</label>
+					<select name="hDrive" id="hDrive" size="1">
+						<option value="240GB">240GB</option>
+						<option value="500GB">500GB</option>
+						<option value="750GB">750GB</option>
+						<option value="1TB">1TB</option>
+					</select>
+				</div>
+
+				<div class="dvdBurner">
+					<label for="dvdBurner">DVD Burner*</label>
+							<label for="yes">Yes</label>
+							<input name="dvdBurner" id="yes" type="radio" required />
+							<label for="no">No</label>
+							<input name="dvdBurner" id="no" type="radio" required />
+				</div>
+
+				<div class="tCard">
+					<label for="tCard">Tuner Card*</label>
+							<label for="yes">Yes</label>
+							<input name="tCard" id="yes" type="radio" required />
+							<label for="no">No</label>
+							<input name="tCard" id="no" type="radio" required />
+				</div>
+
+				<div class="mCard">
+					<label for="mCard">Media Card Reader*</label>
+							<label for="yes">Yes</label>
+							<input name="mCard" id="yes" type="radio" required />
+							<label for="no">No</label>
+							<input name="mCard" id="no" type="radio" required />
+				</div>
+
+				<div class="checkbox">
+						<label for="checkbox">Please click if you would like the 24-month extended warranty</label>
+						<input name="eWarranty" id="eWarranty" value="yes" type="checkbox" />
+				</div>
+
+				<div class="comments">
+					<label for="comments">If any additional information or comments on the order. Please enter here.</label><br />
+					<textarea name="comments" id="commBox"></textarea>
+				</div>
+
+			</fieldset>
+
+			<fieldset id="cForm">
+				<legend>Customer Information Form</legend>
+				
+				<p><em>* means required</em></p>
+
+				<div class="fName">
+					<label for="fName">First Name*</label>
+					<input name="fName" id="fName" type="text" placeholder="First Name" required />
+				</div>
+
+				<div class="lName">
+					<label for="lName">Last Name*</label>
+					<input name="lName" id="lName" type="text" placeholder="Last Name" required />
+				</div>
+
+				<div class="street">
+					<label for="street">Street address*</label>
+					<input name="street" id="street" type="text" placeholder="Please insert your street address here." required />
+				</div>
+
+				<div class="city">
+					<label for="city">City*</label>
+					<input name="city" id="city" type="text" placeholder="Please insert your city here." required />
+				</div>
+
+				<div class="state">
+					<label for="state">State*</label>
+					<input name="state" id="state" type="text" list="stateList" required value="MO" />
+				</div>
+
+				<div class="zip">
+					<label for="zip">Zip code*</label>
+					<input name="zip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$" required />
+				</div>
+
+				<div class="phone">
+					<label for="phone">Phone Number*</label>
+					<input name="phone" id="phone" type="tel" placeholder="(nnn) nnn nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+				</div>
+				
+				<datalist id="stateList">
+					<option value="AL"/>
+					<option value="AK"/>
+					<option value="AR"/>	
+					<option value="AZ"/>
+					<option value="CA"/>
+					<option value="CO"/>
+					<option value="CT"/>
+					<option value="DC"/>
+					<option value="DE"/>
+					<option value="FL"/>
+					<option value="GA"/>
+					<option value="HI"/>
+					<option value="IA"/>	
+					<option value="ID"/>
+					<option value="IL"/>
+					<option value="IN"/>
+					<option value="KS"/>
+					<option value="KY"/>
+					<option value="LA"/>
+					<option value="MA"/>
+					<option value="MD"/>
+					<option value="ME"/>
+					<option value="MI"/>
+					<option value="MN"/>
+					<option value="MO"/>	
+					<option value="MS"/>
+					<option value="MT"/>
+					<option value="NC"/>	
+					<option value="NE"/>
+					<option value="NH"/>
+					<option value="NJ"/>
+					<option value="NM"/>			
+					<option value="NV"/>
+					<option value="NY"/>
+					<option value="ND"/>
+					<option value="OH"/>
+					<option value="OK"/>
+					<option value="OR"/>
+					<option value="PA"/>
+					<option value="RI"/>
+					<option value="SC"/>
+					<option value="SD"/>
+					<option value="TN"/>
+					<option value="TX"/>
+					<option value="UT"/>
+					<option value="VT"/>
+					<option value="VA"/>
+					<option value="WA"/>
+					<option value="WI"/>	
+					<option value="WV"/>
+					<option value="WY"/>
+				</datalist>
+
+			</fieldset>
+				<legend>Buttons that should help you.</legend>
+					<input type="submit" value="Send Order" />
+					<input type="reset" value="Cancel Order" />
+					<input name="contactMe" id="contactMe" value="Contact Me" type="button" href="mailto:dsmith2s@capetigers.com" />
+		</form>
+  </body>
+</html>

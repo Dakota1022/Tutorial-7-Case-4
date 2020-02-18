@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+html {
+	background: linear-gradient(rgb(255, 255, 150), rgb(255, 205, 100), rgb(255, 0, 0));
+}
+
+header {
+	width: 100%;
+}
+
+body {
+	background: linear-gradient(rgb(255, 255, 10), rgb(255, 200, 0), rgb(255, 0, 0));
+	color: black;
+}
+
+fieldset#oForm {
+	background: linear-gradient(rgb(150, 255, 255), rgb(100, 205, 255), rgb(0, 0, 255));
+}
+
+fieldset#cForm {
+	background: linear-gradient(rgb(150, 255, 200), rgb(100, 255, 205), rgb(0, 255, 0));
+}
+
+p {
+	margin-top: 0px;
+	padding-top: none;
+	margin-bottom: 0px;
+	padding-bottom: none;
+	font-size: 1.2em;
+	text-align: right;
+}
+
+label {
+	font-size: 1.5em;
+	margin: auto 10px auto 10px;
+	text-align: center;
+}
+
+legend {
+	font-size: 2em;
+	text-align: center;
+	text-decoration: underline;
+}
+
+label, input, select, option {
+	margin-bottom: 25px;
+}
+
+input[type='submit'], input[type='reset'], input#contactMe {
+	font-size: 1.5em;
+	text-align: center;
+	margin: 20px;
+	text-decoration: underline;
+	text-decoration-color:underline;
+}
+
+textarea {
+	margin: 10px;
+	height: 250px;
+	width: 50%;
+}
+
+#fName:focus:valid, #lName:focus:valid, #street:focus:valid, #city:focus:valid, #zip:focus:valid, #phone:focus:valid {
+	background: rgb(0, 255, 0) url(mc_go.png) bottom right/content no-repeat;
+}
+
+#fName:focus:invalid, #lName:focus:invalid, #street:focus:invalid, #city:focus:invalid, #zip:focus:invalid, #phone:focus:invalid {
+	background: rgb(255, 0, 0) url(mc_stop.png) bottom right/content no-repeat;
+}
+
+#fName:focus, #lName:focus, #street:focus, #city:focus, #zip:focus, #phone:focus {
+	background: rgb(255, 115, 0);
+}
